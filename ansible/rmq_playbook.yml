@@ -15,6 +15,7 @@
         EOF
         apt-get update -y
         apt-get install rabbitmq-server -y --fix-missing
+        
     - name: start rmq
       become: yes
       shell: service rabbitmq-server start
